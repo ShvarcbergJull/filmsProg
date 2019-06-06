@@ -24,18 +24,3 @@ s=pickle.dumps(clf2)
 ff=open("save_gone.dat","wb")
 ff.write(s)
 ff.close()
-
-'''
-for line in lines:
-    cols=line.split()
-    if (cols):
-        EX = [cols[0], cols[1], cols[2], cols[3], cols[4], cols[5]]
-        r2 = clf2.predict([EX])
-        z1 = int(r2[0])
-        if abs(z1 - int(cols[6]))<=200000000:
-            j += 1
-        print(str(cols[0])+' '+str(cols[1])+' '+str(cols[2])+' '+str(cols[3])+' '+str(cols[4])+' '+str(cols[5])+ ' ' + str(cols[6]) + ' ' + str(z1))
-        i += 1
-        
-print(str(j/i))
-'''
